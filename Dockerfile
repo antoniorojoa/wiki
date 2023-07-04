@@ -7,8 +7,7 @@ RUN cd /usr/app/server/ && npm install
 #RUN npm install
 RUN cd ..
 RUN pwd
-RUN cd ux && npm install
-RUN npm run build
+RUN cd ux && npm install && npm run build
 RUN cd ..
 
 RUN node server
